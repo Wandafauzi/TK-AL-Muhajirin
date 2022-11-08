@@ -11,3 +11,342 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* nav */
+.bg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .75;
+  background: url('./asset/sentra-bahasa-inggris.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.banner-home{    
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-home{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar-home ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar-home ul li a{
+  text-decoration: none;
+  color: rgb(50, 141, 55);
+  text-transform: uppercase;
+}
+
+.navbar-home ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: rgb(39, 138, 55);
+  position: absolute;
+  left: 0;
+  bottom: -10;
+  transition: 0.5s;
+
+}
+
+.navbar-home ul li:hover::after{
+  width: 100%;
+}
+/* nav end */
+
+/* content */
+.content-home{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:left;
+  color: black;
+  margin: 200px;
+}
+.content-home h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.content-home p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+#h1{
+  font-size: 80px !important;
+  text-align: center;
+}
+
+#h2{
+  font-size: 65px !important ;
+  text-align: center;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+}
+
+#btn-daftar{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  background-color: #6CD06A;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 15px;
+  gap: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#btn-daftar:hover{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  background-color: #b6e5b6;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 15px;
+  gap: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.content-row{
+  top: -90px;
+}
+
+.content-row,.testi-row{
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.content-col, .testi-col{
+  flex-basis: 28%;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px 3px rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+  background-color: white;
+  font-weight: bold;
+}
+/* .content end */
+
+/* .galeri */
+.galeri{
+  width: 100%;
+  margin-top: 50px;
+  padding: 70px 0;
+  background-color: white;
+}
+
+.judul-home{
+  text-align: center; 
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.judul-home::after{
+  content: '';
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(green, #fff);
+  top: -20px;
+  left: 0;
+  transform: rotate(10deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+#galeri{
+  padding: 20px 80px;
+}
+
+#kelas{
+  padding: 20px 40px;
+
+}
+.galeri,#row{
+  width: 100%;
+  padding: 70px 0;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#row{
+  padding: 20px 80px;
+}
+
+#row .card{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.foto1{
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.foto1 img{
+  width: 100%;
+  border-radius: 7px;
+}
+
+.foto1 .deskripsi{
+  margin: 20px;
+  color: black;
+}
+/* galeri end */
+
+/* Testi */
+#testimoni{
+  width: 100%;
+  padding: 70px 0;
+  background:rgba(24, 168, 24, 0.486);
+}
+.judul-testi{
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: auto;
+  
+}
+
+
+/* testi End */
+/* promo */
+.promo{
+  background: url('./asset/Compo.png') no-repeat;
+  opacity: 70%;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.promo p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black !important;
+  height: 60%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bg-green{
+  text-decoration: none;
+  color: white;
+  background-color: #6CD06A;
+  align-items: flex-start;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/* Footer */
+
+#footer-home{
+  padding: 100px 0 20px;
+  background: #efefef;
+}
+
+
+
+.footer-row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-right,.footer-left{
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-right{
+  text-align: right;
+}
+.footer-row h1{
+  margin: 10px 0;
+}
+
+.footer-row p{
+  line-height: 35px;
+}
+
+.sosmed{
+  text-align: center;
+}
+
+.sosmed .bi{
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid green;
+  margin: 40px 5px 0;
+  color: green;
+  cursor: pointer;
+  text-align: center;
+}
+/* footer end */
+
+/* Page Home End */
